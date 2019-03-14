@@ -131,10 +131,7 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.3);    
 }
 
-.faixa:hover{
-    width: 1200px;
-    transition: 2s;
-}
+
 
 .tituloBanner h1{
     font-size: 100px;
@@ -154,12 +151,17 @@ a:hover{
     
 }
 
-.tituloBanner h1:hover{
+.banner:hover .tituloBanner{
     background-color: rgb(0, 0, 0, 0.8);
     color: #fff;
     transition: 3S;
     
     margin-top: 350px;
+}
+
+.banner:hover .faixa{
+    width: 1200px;
+    transition: 2s;
 }
 
 .projeto{
@@ -197,8 +199,8 @@ a:hover{
 .sobre_empresa_texto{
     width: 800px;
     z-index: 999;
-    height: 450px;
-    background-color: #161616;
+    height: 490px;
+    background-color: rgb(22, 22, 22, 0.7);
     margin-left: 600px;
     margin-top: 150px;
     float: left;
@@ -212,7 +214,7 @@ a:hover{
     padding-top: 20px;
 }
 
-.sobre_empresa_texto p{
+.sobre_empresa_texto pre{
     font-family: arial;
     padding: 20px;
     font-size: 24px;
