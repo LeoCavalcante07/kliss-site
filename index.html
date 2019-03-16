@@ -11,13 +11,32 @@
 		<script src="jquery.min.js"></script>
 		<script src="src/js/jquery.bxslider.js"></script>
 		<script>
+
+            $(window).on('load', function () {
+                $('#preloader .inner').fadeOut();
+                $('#preloader').delay(350).fadeOut('slow'); 
+                $('body').delay(350).css({'overflow': 'visible'});
+            })
+
+
 			$(document).ready(function(){
-                
+
+
+                //$("#loader").delay(2000).fadeOut('slow');
+
+                //$('.tituloBanner').animate({ 'marginTop': '350px'}, 2000);
                 $('.tituloBanner h1').css({'marginTop': '400px', 'color':'white', 'transition':'3s'});
                 $('.faixa').css({'width': '1200px', 'transition':'3s'});
-                
 
-             
+
+                $(window).on('scroll', function() {
+                    if($(window).scrollTop() > 900) {
+                        
+                        $('.sobre_empresa_texto').css({'margin-left':'600px', 'transition':'2s'});
+                     
+                    }
+                });                
+                                
 
 			$('.slider').bxSlider({
 				mode: 'fade',
@@ -26,8 +45,20 @@
 				autoHover: false
 			});
 		  });
-          
-		</script>
+
+
+        </script>
+        <div id="preloader">
+            <div class="inner">
+                
+            <div class="bolas">
+                
+                <div></div>
+                <div></div>
+                <div></div>                    
+            </div>
+            </div>
+        </div>
         <header>
             
                 <div class="logo"></div>
@@ -105,7 +136,7 @@
             <section class="sobre_empresa" id="empresa">
                 <div class="sobre_empresa_texto">
                     <h1>A Kliss Solutions . . .</h1>
-                    <pre> 
+<pre> 
     Fundada recentemente, em 2016, a Kliss Solutions surgiu a partir 
 de um grupo montado para a realização de um Trabalho de Conclusão 
 de Curso, em que os integrantes criaram uma empresa de solução de 
@@ -144,7 +175,7 @@ consolidando-se no mercado e deixando a sua marca.
                         <img class="img-fun" src="image/leo.jpeg" alt="Leo Cavalcante" width=200 height=200   >
                     </div>
                     <h1>Leonardo</h1>
-                    <p>O louco dos programas Desktops!</p>
+                    <p>O louco por back-end!</p>
                 </div>
                 <div class="pessoa">
                     <div class="img">
