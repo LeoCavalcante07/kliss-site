@@ -29,13 +29,7 @@
                 $('.faixa').css({'width': '1200px', 'transition':'3s'});
 
 
-                $(window).on('scroll', function() {
-                    if($(window).scrollTop() > 900) {
-                        
-                        $('.sobre_empresa_texto').css({'margin-left':'600px', 'transition':'2s'});
-                     
-                    }
-                });                
+                              
                                 
 
 			$('.slider').bxSlider({
@@ -44,7 +38,26 @@
 				auto: true,
 				autoHover: false
 			});
-		  });
+          });
+          
+
+          $(window).on('scroll', function() {
+            if($(window).scrollTop() > 900) {
+                
+                $('.sobre_empresa_texto').css({'margin-left':'600px', 'transition':'2s'});
+                
+            }
+
+            if($(window).scrollTop() > 1600) {
+                
+                $('.seg_func_cima').css({'margin-left':'400px', 'transition':'2s'});
+
+                $('.seg_func_baixo').css({'margin-left':'550px', 'transition':'3s'});
+                
+            }
+         });  
+
+
 
 
         </script>
@@ -154,43 +167,57 @@ consolidando-se no mercado e deixando a sua marca.
                 </div>
             </section>
             
-            <section class="funcionarios" id="time">
-                <div class="alinhar_func"></div>
-                <div class="pessoa">
-                    <div class="img">
-						<img class="img-fun"src="image/igor.jpg" alt="Igor Feitosa" width=200 height=200   >
-                    </div>
-                    <h1>Igor</h1>
-                    <p>Apaixonado por JavaScript e o mundo da tecnologia!</p>
+            <section class="" id="time">
+                <!-- <div class="alinhar_func"></div> -->
+                <div class="seg_func_cima">
+
+                    <div class="pessoa">
+                            <div class="img">
+                                <img class="img-fun"src="image/manu.jpg" alt="Emanuelly Marinho" width=200 height=200   >
+                            </div>
+                            <h1>Emanuelly</h1>
+                            <p>Ama desafios como Java, mas é louca por FrontEnd.</p>
+                        </div>
+                        <div class="pessoa">
+                            <div class="img">
+                                <img class="img-fun" src="image/leo.jpeg" alt="Leo Cavalcante" width=200 height=200   >
+                            </div>
+                            <h1>Leonardo</h1>
+                            <p>O louco por back-end!</p>
+                        </div>
+                        <div class="pessoa">
+                            <div class="img">
+                                <img class="img-fun" src="image/sarah.jpeg" alt="Sarah Oliveira" width=200 height=200   >
+                            </div>
+                            <h1>Sarah</h1>
+                            <p>Se dá bem com FrontEnd e ama o que faz!</p>
+                        </div>
                 </div>
-                <div class="pessoa">
-                    <div class="img">
-						<img class="img-fun"src="image/manu.jpg" alt="Emanuelly Marinho" width=200 height=200   >
-                    </div>
-                    <h1>Emanuelly</h1>
-                    <p>Ama desafios como Java, mas é louca por FrontEnd.</p>
+
+                <div class="seg_func_baixo">
+
+                    <div class="pessoa">
+                            <div class="img">
+                                <img class="img-fun"src="image/igor.jpg" alt="Igor Feitosa" width=200 height=200   >
+                            </div>
+                            <h1>Igor</h1>
+                            <p>Apaixonado por JavaScript e o mundo da tecnologia!</p>
+                        </div>
+
+
+                        <div class="pessoa">
+                                <div class="img">
+                                    <img class="img-fun" src="image/kaio.jpeg" alt="Kaio Wesley" width=200 height=200   >
+                                </div>
+                                <h1>Kaio</h1>
+                                <p>PhP é a linguagem que ele ama! Outro fã de tecnologia!</p>
+                            </div>
+
+
                 </div>
-                <div class="pessoa">
-                    <div class="img">
-                        <img class="img-fun" src="image/leo.jpeg" alt="Leo Cavalcante" width=200 height=200   >
-                    </div>
-                    <h1>Leonardo</h1>
-                    <p>O louco por back-end!</p>
-                </div>
-                <div class="pessoa">
-                    <div class="img">
-                        <img class="img-fun" src="image/sarah.jpeg" alt="Sarah Oliveira" width=200 height=200   >
-                    </div>
-                    <h1>Sarah</h1>
-                    <p>Se dá bem com FrontEnd e ama o que faz!</p>
-                </div>
-                <div class="pessoa">
-                    <div class="img">
-						<img class="img-fun" src="image/kaio.jpeg" alt="Kaio Wesley" width=200 height=200   >
-                    </div>
-                    <h1>Kaio</h1>
-                    <p>PhP é a linguagem que ele ama! Outro fã de tecnologia!</p>
-                </div>
+
+
+
             </section>
             
 
